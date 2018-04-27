@@ -1,7 +1,7 @@
 {
     "name": "agik/yii2simplerbac",
     "description": "simple rbac out of the box for yii2",
-    "type": "yii2 extension",
+    "type": "yii2-extension",
     "homepage": "https://github.com/agik-setiawan/yii2datatable",
     "license": "MIT",
     "authors": [
