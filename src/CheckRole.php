@@ -20,14 +20,9 @@ class CheckRole extends Component
 	public $menus;
 	public $user;
 
-	public function __construct(){
+	public function __construct($level){
 		$excpt=new Exceptions();
-		if(\Yii::$app->user->identity){
-			$this->level=\Yii::$app->user->identity->level;
-			$this->user=\Yii::$app->user->identity;
-		}else{
-			$excpt->notAllowed('You Dont Have Permission');
-		}
+		$this->level=$level;
 		$this->layout='';
 	}
 
@@ -86,7 +81,7 @@ class CheckRole extends Component
 		$roles=new Role();
 		$menu=$roles->role->menu;
 		$menu=(array)$menu;
-		$menu=$menu[$this->user->level];
+		$menu=$menu[$this->level];
 		return $menu;
 	}
 
