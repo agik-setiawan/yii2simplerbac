@@ -1,8 +1,8 @@
 <?php
-namespace app\helpers\rbac;
+namespace agik\yii2simplerbac;
 use yii\base\Component;
 use app\config\role\Role;
-use app\helpers\rbac\Exceptions;
+use agik\yii2simplerbac\Exceptions;
 /**
 * 
 */

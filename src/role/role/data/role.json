@@ -1,0 +1,42 @@
+{
+	"role":{
+
+		"user":{
+			"module":{
+				"test":{
+					"controller":{
+						"default":["index","coba"]
+					}
+				}
+			}
+		},
+		"admin":{
+			"module":{
+				"test":{
+					"controller":{
+						"default":["index","coba","admin"],
+						"coba":["index","coba","admin"]
+					}
+				}
+			}
+		}
+		
+	},
+	"menu":{
+		"admin":{
+			"menu":{"title":"Home","url":"#","child":[
+				{"menu":{"title":"Child Home1","url":"#"}},
+				{"menu":{"title":"Child Home2","url":"#"}},
+				{"menu":{"title":"Child Home3","url":"#"}}
+			]}
+		},
+		"user":{
+			"menu":{"title":"Home","url":"#","child":[
+				{"menu":{"title":"Child Home1","url":"#"}},
+				{"menu":{"title":"Child Home2","url":"#"}},
+				{"menu":{"title":"Child Home3","url":"#"}}
+			]}
+		}
+	}
+	
+}

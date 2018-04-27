@@ -1,0 +1,35 @@
+{
+    "name": "agik/yii2simplerbac",
+    "description": "simple rbac out of the box for yii2",
+    "type": "yii2 extension",
+    "homepage": "https://github.com/agik-setiawan/yii2datatable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "agik-setiawan",
+            "email": "setiawanagik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "agik\\yii2simplerbac\\": "src/"
+        }
+    },
+    "require":{
+        "php": ">=5.4.0",
+        "slowprog/composer-copy-file": "~0.2"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "SlowProg\\CopyFile\\ScriptHandler::copy"
+        ],
+        "post-update-cmd": [
+            "SlowProg\\CopyFile\\ScriptHandler::copy"
+        ]
+    },
+    "extra": {
+        "copy-file": {
+            "vendor/agik/yii2simplerbac/src/role/": "config/"
+        }
+    }
+}

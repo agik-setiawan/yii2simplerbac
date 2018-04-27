@@ -1,5 +1,5 @@
 <?php
-namespace app\helpers\rbac;
+namespace agik\yii2simplerbac;
 use yii\base\Component;
 use yii\web\ForbiddenHttpException;
 /**
